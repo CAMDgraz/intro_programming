@@ -1,4 +1,4 @@
-# Dissertationsseminar "Introduction to scientific programming" @ Med Uni Graz
+# "Introduction to scientific programming" @ Med Uni Graz
 
 Dear participant, 
 
