@@ -2,9 +2,11 @@
 
 Dear participant, 
 
-welcome to the course of Introduction to scientific programming. 
+welcome to the course of Introduction to scientific programming. We are very happy to offer this year a first course about programming within the PhD School MolMed. In this course, we will get the basics in two of the main lenguages used in Science: python and R. We will also introduce 
 
 
+# Linux environemnt, bash and HPC
+# python
 # R 
 
 ## Installation and previous requirements
