@@ -7,7 +7,9 @@ welcome to the course of Introduction to scientific programming.
 
 # R 
 
-Install and prepare software needed 
+## Installation and previous requirements
+
+Install and prepare software needed: 
 1.	Download and install R
 2.	Download and install RStudio
 3.	Install R packages listed below and update existing R packages
