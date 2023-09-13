@@ -7,7 +7,7 @@ welcome to the course of Introduction to scientific programming. We are very hap
 The course will take place the week Nov. 6-10 2023 at the Med Campus in the room SR58 (MC2.Q.01.033).
 
 
-# 1. Linux environemnt, bash and HPC
+# 1. Linux environement, bash and HPC
 
 # 2. python
 # 3. R 
