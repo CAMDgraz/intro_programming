@@ -10,24 +10,25 @@ welcome to the course of Introduction to scientific programming.
 ## Installation and previous requirements
 
 Install and prepare software needed: 
-1.	Download and install R
-2.	Download and install RStudio
-3.	Install R packages listed below and update existing R packages
-R
-Download R from CRAN (comprehensive R archive network)
-https://cloud.r-project.org. 
+
+### Download R from CRAN (comprehensive R archive network)
+https://cloud.r-project.org
 You will find links to the download depending on your operating system (Linux, macOS, Windows). There are regular releases, i.e., update regularly.
-RStudio
-RStudio is an integrated development environment (IDE) for R programming and can be downloaded
+
+
+## RStudio
+RStudio is an integrated development environment (IDE) for R programming and can be downloaded:
+
 https://posit.co/download/rstudio-desktop/
+
 The download for Windows is very prominent on the webpage, however, you will find the download file depending on your operating system (Linux, macOS, Windows) listed further down on the webpage, i.e. scroll down.
 
 Also RStudio is updated on a regular basis, i.e. check for updates. 
-R packages
+
+#### R packages and updates
 1.	Open RStudio
 R will be now automatically running within the RStudio environment. The following figure shows how RStudio is structured (source: https://docs.posit.co/ide/user/ide/get-started/):
  
-
 2.	Install R packages
 Copy & paste the following statement in the command window
 
