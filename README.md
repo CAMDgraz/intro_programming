@@ -19,7 +19,7 @@ You will find links to the download depending on your operating system (Linux, m
 ## RStudio
 RStudio is an integrated development environment (IDE) for R programming and can be downloaded:
 
-https://posit.co/download/rstudio-desktop/
+https://posit.co/download/rstudio-desktop
 
 The download for Windows is very prominent on the webpage, however, you will find the download file depending on your operating system (Linux, macOS, Windows) listed further down on the webpage, i.e. scroll down.
 
@@ -27,9 +27,12 @@ Also RStudio is updated on a regular basis, i.e. check for updates.
 
 #### R packages and updates
 1.	Open RStudio
-R will be now automatically running within the RStudio environment. The following figure shows how RStudio is structured (source: https://docs.posit.co/ide/user/ide/get-started/):
+R will be now automatically running within the RStudio environment. The following figure shows how RStudio is structured (source: https://docs.posit.co/ide/user/ide/get-started/)
+
+<img width="241" alt="image" src="https://github.com/CAMDgraz/intro_programming/assets/75629351/16ce58dc-76e6-4994-a819-6bdc65689949">
+
  
-2.	Install R packages
+3.	Install R packages
 Copy & paste the following statement in the command window
 
 install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx','nlme','lme4'))
@@ -53,4 +56,4 @@ update.packages(ask = FALSE)
 
 This will update all R packages which come with the installation of R. Please be aware that also R packages are updated on a regular basis, i.e. check for updates.
 
-![image](https://github.com/CAMDgraz/intro_programming/assets/75629351/c6b33100-67db-4743-8a08-66c7e6ab27fc)
+
