@@ -2,14 +2,17 @@
 
 Dear participant, 
 
-welcome to the course of Introduction to scientific programming. We are very happy to offer this year a first course about programming within the PhD School MolMed. In this course, we will get the basics in two of the main lenguages used in Science: python and R. We will also introduce 
+welcome to the course of Introduction to scientific programming. We are very happy to offer this year a first course about programming within the PhD School MolMed. In this course, we will get the basics in two of the main lenguages used in Science: python and R. We will also introduce how to work under Linux environment, the use of some command in the terminal (bash) as well as how to submit jobs to a scientific cluster using the job manager SLURM. 
+
+The course will take place the week Nov. 6-10 2023 at the Med Campus in the room SR58 (MC2.Q.01.033).
 
 
-# Linux environemnt, bash and HPC
-# python
-# R 
+# 1. Linux environemnt, bash and HPC
 
-## Installation and previous requirements
+# 2. python
+# 3. R 
+
+## 3.1. Installation and previous requirements
 
 Install and prepare software needed: 
 
