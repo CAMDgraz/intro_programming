@@ -1,5 +1,4 @@
-# intro_programming
-Introduction to scientific programming (PhD course @Med Uni Graz)
+# Dissertationsseminar "Introduction to scientific programming" @ Med Uni Graz
 
 Dear participant, 
 
