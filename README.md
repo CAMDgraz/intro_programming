@@ -9,6 +9,14 @@ The course will take place the week Nov. 6-10 2023 at the Med Campus in the room
 
 # 1. Linux environement, bash and HPC
 
+- Introduction to Linux environment, distributions, permissions
+- Command-line basics
+- Vi editor
+- Environment variables, .bashrc file
+- Scripts and running scientific jobs
+- Visualization of data with gnuplot
+- SLURM
+
 # 2. python
 
 **(1) BASIC PYTHON**
