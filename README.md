@@ -10,6 +10,48 @@ The course will take place the week Nov. 6-10 2023 at the Med Campus in the room
 # 1. Linux environement, bash and HPC
 
 # 2. python
+
+**(1) BASIC PYTHON**
+**(2) PANDAS**
+
+INTRODUCTION: 
+	- installing pandas
+	- pandas series
+	- pandas DataFrame
+	- reading data from a file
+	- viewing data (head, tail, shape, info, list column names)
+	- outputting files
+
+DATA CLEANING:
+	- missing values (check, count, remove)
+	- duplicates
+	- rename columns
+	- add/remove columns and/or rows (drop, iloc, loc)
+	- strip function
+
+DATA MANIPULATION:
+	- selection operation 
+	- data transformation (categorical variables)
+	- standardizing/formatting column values using replace
+	- standardizing/formatting phone numbers (replace, apply functions)
+	- splitting columns
+	- filtering down rows of data
+	- groupby function
+
+MULTIPLE DATAFRAMES:
+	- concatanting two dataframes
+	- merge function (merging based on a mutual column)
+
+resources:
+- https://www.youtube.com/watch?v=CIQJtJ38-hI
+- https://www.youtube.com/watch?v=bDhvCp3_lYw
+- https://www.datacamp.com/tutorial/pandas
+- https://coursera.pxf.io/BXY3Wy
+- https://bit.ly/3KHMLlu
+- https://leetcode.com/studyplan/30-days-of-pandas/
+
+**(3) MATPLOTLIB**
+
 # 3. R 
 
 ## 3.1. Installation and previous requirements
