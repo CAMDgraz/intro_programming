@@ -116,7 +116,7 @@ Download R from CRAN (comprehensive R archive network) from https://cloud.r-proj
 #### RStudio
 RStudio is an integrated development environment (IDE) for R programming and can be downloaded:
 
-> https://posit.co/download/rstudio-desktop
+https://posit.co/download/rstudio-desktop
 
 The download for Windows is very prominent on the webpage, however, you will find the download file depending on your operating system (Linux, macOS, Windows) listed further down on the webpage, i.e. scroll down.
 
