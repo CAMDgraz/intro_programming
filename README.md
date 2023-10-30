@@ -2,7 +2,7 @@
 
 Dear participant, 
 
-welcome to the course of Introduction to scientific programming. We are very happy to offer this year a first course about programming within the PhD School MolMed. In this course, we will get the basics in two of the main lenguages used in Science: python and R. We will also introduce how to work under Linux environment, the use of some command in the terminal (bash) as well as how to submit jobs to a scientific cluster using the job manager SLURM. 
+welcome to the course of Introduction to scientific programming. We are very happy to offer this year a first course about programming within the PhD School MolMed. In this course, we will get the basics in two of the main languages used in Science: python and R. We will also introduce how to work under Linux environment, the use of some command in the terminal (bash) as well as how to submit jobs to a scientific cluster using the job manager SLURM. 
 
 The course will take place the week Nov. 6-10 2023 at the Med Campus in the **room SR68 (MC2.Q.01.040) (NEW ROOM)**.
 
@@ -10,7 +10,7 @@ The course will take place the week Nov. 6-10 2023 at the Med Campus in the **ro
 # 1. Linux environement, bash and HPC
 
 ## 1.1. Installation and previous requirements
-We have prepared a virtual machine with Debian for the course to be used on the laptops of the PC Pool. We will cover the following topics:
+We have prepared a virtual machine with Debian for the course to be used on the laptops of the Pc Pool. We will cover the following topics:
 
 ## 1.2. Content
 
@@ -108,7 +108,7 @@ resources:
 
 ## 3.1. Installation and previous requirements
 
-Install and prepare software needed: 
+We will work with the Anaconda Interface/Explorer interface on the PC Pool. In case you would like to have R on your personal computer, we recommend to install R and RStudio.  
 
 ### Download R from CRAN (comprehensive R archive network)
 https://cloud.r-project.org
