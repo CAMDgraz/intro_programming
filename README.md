@@ -116,7 +116,7 @@ Download R from CRAN (comprehensive R archive network) from https://cloud.r-proj
 #### RStudio
 RStudio is an integrated development environment (IDE) for R programming and can be downloaded:
 
-https://posit.co/download/rstudio-desktop
+> https://posit.co/download/rstudio-desktop
 
 The download for Windows is very prominent on the webpage, however, you will find the download file depending on your operating system (Linux, macOS, Windows) listed further down on the webpage, i.e. scroll down.
 
@@ -129,7 +129,7 @@ R will be now automatically running within the RStudio environment. The followin
 2.	Install R packages
 Copy & paste the following statement in the command window
 
-install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx','nlme','lme4'))
+> install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx','nlme','lme4'))
 
 This will install the following R packages:
 + tidyverse
@@ -146,7 +146,7 @@ This will install the following R packages:
 3.	Update R packages
 Copy & paste the following statement in the command window
 
-update.packages(ask = FALSE)
+> update.packages(ask = FALSE)
 
 This will update all R packages which come with the installation of R. Please be aware that also R packages are updated on a regular basis, i.e. check for updates.
 
