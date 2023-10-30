@@ -131,17 +131,17 @@ Copy & paste the following statement in the command window
 
 install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx','nlme','lme4'))
 
-This will install the following R packages
-•	tidyverse
-•	ggplot2
-•	knitr
-•	gtsummary
-•	flextable
-•	openxlsx
-•	readxl
-•	xlsx
-•	nlme
-•	lme4
+This will install the following R packages:
++ tidyverse
++ ggplot2
++ knitr
++ gtsummary
++ flextable
++ openxlsx
++ readxl
++ xlsx
++ nlme
++ lme4
 
 3.	Update R packages
 Copy & paste the following statement in the command window
