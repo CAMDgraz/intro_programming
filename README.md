@@ -110,12 +110,12 @@ resources:
 
 We will work with the Anaconda Interface/Explorer interface on the PC Pool. In case you would like to have R on your personal computer, we recommend to install R and RStudio.  
 
-### Download R from CRAN (comprehensive R archive network)
+#### Download R from CRAN (comprehensive R archive network)
 https://cloud.r-project.org
 You will find links to the download depending on your operating system (Linux, macOS, Windows). There are regular releases, i.e., update regularly.
 
 
-## RStudio
+#### RStudio
 RStudio is an integrated development environment (IDE) for R programming and can be downloaded:
 
 https://posit.co/download/rstudio-desktop
