@@ -126,7 +126,7 @@ Also RStudio is updated on a regular basis, i.e. check for updates.
 1.	Open RStudio
 R will be now automatically running within the RStudio environment. The following figure shows how RStudio is structured (source: https://docs.posit.co/ide/user/ide/get-started/)
  
-3.	Install R packages
+2.	Install R packages
 Copy & paste the following statement in the command window
 
 install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx','nlme','lme4'))
