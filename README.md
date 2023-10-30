@@ -111,9 +111,7 @@ resources:
 We will work with the Anaconda Interface/Explorer interface on the PC Pool. In case you would like to have R on your personal computer, we recommend to install R and RStudio.  
 
 #### Download R from CRAN (comprehensive R archive network)
-https://cloud.r-project.org
-You will find links to the download depending on your operating system (Linux, macOS, Windows). There are regular releases, i.e., update regularly.
-
+Download R from CRAN (comprehensive R archive network) from https://cloud.r-project.org. You will find links to the download depending on your operating system (Linux, macOS, Windows). There are regular releases, i.e., update regularly. 
 
 #### RStudio
 RStudio is an integrated development environment (IDE) for R programming and can be downloaded:
@@ -127,9 +125,6 @@ Also RStudio is updated on a regular basis, i.e. check for updates.
 #### R packages and updates
 1.	Open RStudio
 R will be now automatically running within the RStudio environment. The following figure shows how RStudio is structured (source: https://docs.posit.co/ide/user/ide/get-started/)
-
-<img width="241" alt="image" src="https://github.com/CAMDgraz/intro_programming/assets/75629351/16ce58dc-76e6-4994-a819-6bdc65689949">
-
  
 3.	Install R packages
 Copy & paste the following statement in the command window
