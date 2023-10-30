@@ -9,7 +9,10 @@ The course will take place the week Nov. 6-10 2023 at the Med Campus in the **ro
 
 # 1. Linux environement, bash and HPC
 
+## 1.1. Installation and previous requirements
 We have prepared a virtual machine with Debian for the course to be used on the laptops of the PC Pool. We will cover the following topics:
+
+## 1.2. Content
 
 - Introduction to Linux environment, distributions, permissions
 - Command-line basics
@@ -20,8 +23,36 @@ We have prepared a virtual machine with Debian for the course to be used on the 
 - SLURM
 
 # 2. python
+## 2.1. Installation and previous requirements
+
+## 2.2. Content
 
 **(1) BASIC PYTHON**
+
+1. wwwPython (What? Why? Who?)
+2. Installation and usage
+    2.1 Install python
+    2.2 How to write/run a python script
+
+3. Data Types and Structures
+
+    3.1 Basics data types
+
+    3.2 Basics data structures
+
+4. Conditionals and Loops
+
+    4.1 if/else/elif
+
+    4.2 for/while loops
+
+5. Code reuse
+
+    5.1 Functions
+
+    5.2 Import
+
+
 **(2) PANDAS**
 
 INTRODUCTION: 
@@ -59,6 +90,8 @@ resources:
 - https://coursera.pxf.io/BXY3Wy
 - https://bit.ly/3KHMLlu
 - https://leetcode.com/studyplan/30-days-of-pandas/
+
+
 
 **(3) MATPLOTLIB**
 
