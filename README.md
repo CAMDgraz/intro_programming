@@ -91,9 +91,16 @@ resources:
 - https://bit.ly/3KHMLlu
 - https://leetcode.com/studyplan/30-days-of-pandas/
 
-
-
 **(3) MATPLOTLIB**
+
+1. Basic plotting with Matplotlib
+- creating a simple line plot
+- adding labels and titles, legends, grids
+- customizing colours and styles
+- saving plots to files
+2. Different types of plots
+- scatter, bars, histograms, pie charts
+3. A few exercises where students apply their Pandas knowledge to plot data from files
 
 # 3. R 
 
