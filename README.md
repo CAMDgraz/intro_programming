@@ -25,6 +25,8 @@ We have prepared a virtual machine with Debian for the course to be used on the 
 # 2. python
 ## 2.1. Installation and previous requirements
 
+We will work with the Anaconda Distribution interface on the Pc Pool. In case you would like to have python on your personal computer, we recommend to install Anaconda. It works for Windows/Mac/Linux. You can check in the following link: https://www.anaconda.com/download
+
 ## 2.2. Content
 
 **(1) BASIC PYTHON**
