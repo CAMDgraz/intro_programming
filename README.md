@@ -57,6 +57,8 @@ We will work with the Anaconda Distribution interface on the Pc Pool. In case yo
 
 **(2) PANDAS**
 
+https://github.com/DesikaKolaric/Pandas_intro_course
+
 INTRODUCTION: 
 	- installing pandas
 	- pandas series
