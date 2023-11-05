@@ -22,6 +22,11 @@ We have prepared a virtual machine with Debian for the course to be used on the 
 - Visualization of data with gnuplot
 - SLURM
 
+## Some useful links
+
+https://vsc.ac.at/training/2022/VSC-Linux-Oct/
+
+
 # 2. Introduction to python
 ## 2.1. Installation and previous requirements
 
