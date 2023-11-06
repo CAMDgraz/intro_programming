@@ -25,11 +25,36 @@ We have prepared a virtual machine with Debian for the course to be used on the 
 ## Some useful links
 Slides: https://medunigraz-my.sharepoint.com/:b:/g/personal/pedro_murcia_medunigraz_at/EW0T16iEgXdEvSbGCwm814cBA2Ljq6LKPTTk53bnNMWbiA?e=kjdufE
 
-Image: https://medunigraz-my.sharepoint.com/:f:/g/personal/pedro_murcia_medunigraz_at/EnVhHCfGieBCict8Dp8FeUsB4iiHlyR9X_-IJE8sWBM1Tg?e=ygVrHh 
-
 VSC Tranining course: https://vsc.ac.at/training/2022/VSC-Linux-Oct/
 
 Spectrum data: https://medunigraz-my.sharepoint.com/:u:/g/personal/pedro_murcia_medunigraz_at/EXy8HwgP7-FKgOI7u6GoNkUBD4uf2oHq4rhlXFDraEFg_w?e=ZFQfjf
+
+
+## Some examples of bash scripts:
+
+1. script.sh
+***
+#!/bin/bash
+
+echo "foo bar"
+mkdir myfolder
+***
+
+2. loop.sh (using a numeric sequence)
+***
+for i in {1..5}
+do
+echo $i
+done
+***
+
+3. loop2.sh (using a list of elements)
+***
+for i in $(cat test.dat)
+do
+echo $i
+do
+***
 
 
 # 2. Introduction to python
