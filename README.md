@@ -23,7 +23,7 @@ We have prepared a virtual machine with Debian for the course to be used on the 
 - SLURM
 
 ## Some useful links
-
+Image: https://medunigraz-my.sharepoint.com/:f:/g/personal/pedro_murcia_medunigraz_at/EnVhHCfGieBCict8Dp8FeUsB4iiHlyR9X_-IJE8sWBM1Tg?e=ygVrHh 
 https://vsc.ac.at/training/2022/VSC-Linux-Oct/
 
 
