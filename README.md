@@ -29,6 +29,9 @@ VSC Tranining course: https://vsc.ac.at/training/2022/VSC-Linux-Oct/
 
 Spectrum data: https://medunigraz-my.sharepoint.com/:u:/g/personal/pedro_murcia_medunigraz_at/EXy8HwgP7-FKgOI7u6GoNkUBD4uf2oHq4rhlXFDraEFg_w?e=ZFQfjf
 
+Linux cheat sheet: https://cheatography.com/davechild/cheat-sheets/linux-command-line/ 
+
+vi cheat sheet: https://www2.seas.gwu.edu/~mems/ece215/reference/vi-cheatsheet.pdf 
 
 ## Some examples of bash scripts:
 
