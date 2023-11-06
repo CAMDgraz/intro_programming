@@ -164,7 +164,7 @@ R will be now automatically running within the RStudio environment. The followin
 2.	Install R packages
 Copy & paste the following statement in the command window
 
-> install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx','nlme','lme4'))
+> install.packages(c('tidyverse','ggplot2','knitr','gtsummary','flextable','openxlsx','readxl','xlsx'))
 
 This will install the following R packages:
 + tidyverse
@@ -175,8 +175,6 @@ This will install the following R packages:
 + openxlsx
 + readxl
 + xlsx
-+ nlme
-+ lme4
 
 3.	Update R packages
 Copy & paste the following statement in the command window
