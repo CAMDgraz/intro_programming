@@ -36,28 +36,28 @@ vi cheat sheet: https://www2.seas.gwu.edu/~mems/ece215/reference/vi-cheatsheet.p
 ## Some examples of bash scripts:
 
 1. script.sh
-***
++++++
 #!/bin/bash
 
 echo "foo bar"
 mkdir myfolder
-***
++++++
 
 2. loop.sh (using a numeric sequence)
-***
++++++
 for i in {1..5}
 do
 echo $i
 done
-***
++++++
 
 3. loop2.sh (using a list of elements)
-***
++++++
 for i in $(cat test.dat)
 do
 echo $i
 do
-***
++++++
 
 
 # 2. Introduction to python
