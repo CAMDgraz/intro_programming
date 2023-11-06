@@ -36,18 +36,20 @@ vi cheat sheet: https://www2.seas.gwu.edu/~mems/ece215/reference/vi-cheatsheet.p
 ## Some examples of bash scripts:
 
 + script.sh 
-
+<br>
 #!/bin/bash <br>
 echo "foo bar" <br>
 mkdir myfolder <br>
 
-+ loop.sh (using a numeric sequence) 
++ loop.sh (using a numeric sequence)
+<br>
 for i in {1..5} <br>
 do <br>
 echo $i <br>
 done <br>
 
 + loop2.sh (using a list of elements)
+<br>
 for i in $(cat test.dat) <br>
 do <br>
 echo $i <br>
