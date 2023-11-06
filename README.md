@@ -47,7 +47,7 @@ do <br>
 echo $i <br>
 done <br>
 
-+ loop2.sh (using a list of elements) <br>
++ loop2.sh (using a list of elements in test.dat) <br>
 #!/bin/bash <br> 
 for i in $(cat test.dat) <br>
 do <br>
