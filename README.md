@@ -7,7 +7,7 @@ welcome to the course of Introduction to scientific programming. We are very hap
 The course will take place the week Nov. 6-10 2023 at the Med Campus in the **room SR68 (MC2.Q.01.040) (NEW ROOM)**.
 
 
-# 1. Linux environement, bash and HPC
+# 1. Linux environment, bash and HPC
 
 ## 1.1. Installation and previous requirements
 We have prepared a virtual machine with Debian for the course to be used on the laptops of the Pc Pool. We will cover the following topics:
