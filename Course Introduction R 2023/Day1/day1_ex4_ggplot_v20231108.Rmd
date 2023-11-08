@@ -1,0 +1,223 @@
+---
+title: "Day1 - Exercise 4"
+subtitle: "Getting started with ggplot"
+author: "YOUR NAME"
+date: "2023-11-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+# settings for output
+  knitr::opts_chunk$set(echo = TRUE)
+
+# libraries used in this Rmd
+  library(ggplot2)
+  library(tidyverse)
+  library(flextable)
+```
+
+# Changes in Rmarkdown file
+* change author name
+* add table of content
+   - if you use HTML output: add the possibility to have a floating ToC
+
+# Data sets
+## Fuel economy data 'mpg'
+The data set 'mpg' comes with the *ggplot2* package and contains fuel economy data from 1999 to 2008 for 38 popular models of cars. A data frame with 234 rows and 11 variables. Be aware that 'mpg' has a *tibble* structure (subclass of data.frame). 
+
+```{r dataset1}
+# A data set within ggplot named 'mpg'
+  dt_mpg <- mpg 
+
+  dt_mpg %>% 
+    filter(row_number() < 6) %>% 
+    flextable::flextable() 
+```
+
+* Use '?mpg' to retrieve information about the variables within the data set.
+* Click on 'dt_mpg' in the environment to view the data set within RStudio.
+
+## Pharmacokinetics of Theophylline 'Theoph'
+The Theoph data frame has 132 rows and 5 columns of data from an experiment on the pharmacokinetics of theophylline. There are 12 subjects with repeated measurement of theophylline concentration (11x) over time.
+
+```{r dataset2}
+# Another data set named 'Theoph'
+  dt_theop <- 
+     Theoph  %>% 
+      as_tibble()
+
+  dt_theop %>% 
+    filter(row_number() < 6) %>% 
+    flextable::flextable() 
+```
+
+* Use '?Theoph' to retrieve information about the variables within the data set.
+
+# Different types of plots using 'dt_mpg'
+## Barcharts
+Adapt the bar chart illustrating the frequency of manufacturers:
+
+* change color and fill of bars
+   - Hint: within 'geom_bar' try something like: fill = "darkgreen"
+   
+* change background of graph using 'theme_bw()'
+   - Hint: look at documentation of theme_bw() - are there other interesting themes?
+
+* we need to change the angle of the labels on the x-axis
+   - Hint: search in a search engine with following key words:  ggplot change angle label x axis
+   - try different values for angle (e.g., 45)
+   - look at documentation of element_text()
+      + maybe we need to work with options hjust (and vjust?)
+   
+
+
+```{r}
+# bar chart
+  ggplot(data = dt_mpg, aes(x = manufacturer)) +
+    geom_bar() 
+```
+
+* Use the same plot and change from absolute frequencies to relative frequencies.
+   - Hint: write 'aes(y = after_stat(prop), group = 1)' in geom_bar()
+
+```{r}
+# bar chart - copy your solution from above
+   
+ 
+```
+
+* Do you find a way to change the y axis to display %?
+   - Hint: look at documentation of scale_y_continuous()
+* Can you get rid of the 'prop' as y axis title?
+
+
+### Bar chart with figure captions
+* Copy solution from above
+* For figure captions we have to work with the R chunk options:
+   - {r, fig.cap = "YOUR CAPTION"}
+
+```{r}
+# bar chart - copy your solution from above
+  
+ 
+```
+
+
+## Histogram
+Adapt the histogram illustrating the engine displacement in litres (displ):
+
+* change color and fill of bars
+* change background of graph using 'theme_bw()' (or one you prefer)
+* we might want to change the interval width into 0.25 liter
+   - Hint: look for 'binwidth' in documentation of geom_histogram()
+* change x axis title to 'Engine displacement [l]' using xlab()
+   - Hint: search in a search engine with following key words:  ggplot change angle label x axis
+
+
+
+```{r}
+# histogram
+
+p_hist_displ <-
+  ggplot(data = dt_mpg, aes(x = displ))  +
+    geom_histogram() +
+    theme_bw() 
+
+p_hist_displ
+```
+
+**Note:** The 'p_hist_displ <-' saves the ggplot on the variable name 'p_hist_displ' and therefore we can refer later back to this plot.
+
+### Histogram for each category
+* Reuse the histogram code from above (p_hist_displ) and retrieve histograms by "type" of car (class)
+   - Hint: facet_grid()
+
+```{r}
+# histogram by categorical variable
+
+p_hist_displ 
+
+
+```
+
+
+## Boxplot
+* Adapt the boxplot underneath such that it illustrates the engine displacement in litres (displ) by  "type" of car (class)
+   - Hint: we want to have the "type" of car (class) on the x axis, i.e. aes() needs to be adapted
+
+```{r}
+# boxplot for displ
+
+p_boxplot_displ <-
+ ggplot(data = dt_mpg, aes(y = displ)) +
+    geom_boxplot() +
+    theme_bw() 
+
+p_boxplot_displ
+
+```
+
+
+
+## Combine different plots in one big plot
+* We need to install the package 'cowplot' in order to use the function plot_grid()
+   - Tools $\rightarrow$ Install packages ...
+   - type 'cowplot'
+   - press 'Install'
+* Adapt the code underneath to 
+   - add panel labels
+   - have the panels underneath each other
+
+
+```{r}
+# Combine different plots in one big plot
+
+  # cowplot::plot_grid(p_boxplot_displ, p_hist_displ)
+ 
+
+
+```
+
+**Note:** The use of package name together with '::' allows to 
+
+* use a function from a package without loading the package;
+* to define which function we want to call in case two/several packages defined a function with the exact same name
+
+
+## Scatterplot
+* Create a scatterplot with engine displacement (displ) on x axis and highway miles per gallon (hwy) on why axis.
+   - Hint: use geom_point()
+* Adapt axis titles accordingly
+* As highway miles per gallon (hwy) is only measured in integers it is likely that we have overlapping observations
+   - Hint: use geom_point(alpha = 0.3) and look into documentation for the meaning of 'alpha'
+* We want to differentiate if number of cylinders (cyl) is >5 or not
+   - Hint: add 'color = (cyl > 5)' to the aes() statement
+* Adapt the legend title to 'Number of cylinders'
+   - Hints: use labs(color = "ABC") 
+* Adapt legend from TRUE/FALSE to >5 and <=5 and the colors used to 'blue' and 'red'
+   - Hint: scale_color_manual() and within that labels and values
+
+
+```{r}
+
+# scatterplot
+
+
+```
+
+# Different types of plots using 'dt_theop'
+## Line plot
+* Create a plot with points (geom_point()) and lines (geom_line()) to show theophylline concentration in the subjects over time.
+   - Hint: you need to state in aes() that the data is grouped by the patients, i.e. 'group = Subject'
+* Adapt axis titles accordingly
+* We want to differentiate if dose of theophylline administered orally to the subject (Dose) is >4.5 or not
+   - Hint: add 'color = (cyl > 5)' to the aes() statement
+   - use your own colors
+* Adapt the legend title and legend accordingly
+   
+```{r}
+# line plot and points
+
+  
+
+```
