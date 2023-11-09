@@ -117,7 +117,7 @@
           
         # change pat_id to be a string variable
           
-        # give Race and Sexlabels
+        # give Race and Sex labels
        
       
       # note: interesting functions: across()
