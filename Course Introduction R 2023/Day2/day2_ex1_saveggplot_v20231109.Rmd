@@ -1,0 +1,93 @@
+---
+title: "Day2 - Exercise 1"
+subtitle: "Save ggplots"
+author: "YOUR NAME"
+date: "2023-11-10"
+output: 
+   html_document:
+     toc: TRUE
+     toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+# settings for output
+  knitr::opts_chunk$set(echo = TRUE)
+
+# libraries used in this Rmd
+  library(ggplot2)
+  library(tidyverse)
+  library(flextable)
+```
+
+
+# Iris
+## Data set
+The data set 'iris' is a famous data set and gives the measurements in centimeters of the variables
+
+* sepal length 
+* sepal width
+* petal length 
+* petal width
+
+for 50 flowers from each of 3 species of iris (*Iris setosa*, *versicolor*, and *virginica*).
+
+```{r dataset1}
+# A data set named 'iris'
+ 
+
+
+```
+
+* Save datat set 'iris' in 'dt_iris' and show first few lines
+   - Hint: Look at Rmd file of Day1 - Exercise 4
+* Click on 'dt_iris' in the environment to view the data set within RStudio.
+
+
+## Plot Iris
+
+```{r}
+
+lab_species <- c("Iris setosa", "Iris virginica", "Iris versicolor")
+
+plot_iris_f <-
+  ggplot(data = dt_iris, aes(x = Sepal.Length, y = Sepal.Width, fill = Species)) +
+      geom_point(aes(shape = Species), size = 3, alpha = 0.7) +
+      
+      scale_fill_manual(values = c("darkred", "blue", "orange"),
+                        labels = lab_species) +
+      scale_shape_manual(values = c(21, 22, 24),
+                         labels = lab_species) +
+      labs(title = "Dataset Iris") +
+      xlab("Sepal length [cm]") +
+      ylab("Sepal width [cm]") +
+      coord_cartesian(xlim = c(4, 8), ylim = c(2, 5)) +
+      theme_bw() +
+      theme(plot.title = element_text(face = "bold", size = 25),
+            axis.title = element_text(size = 20),
+            axis.text = element_text(size = 14),
+            legend.title = element_text(size = 16),
+            legend.text = element_text(size = 14)) 
+
+plot_iris_f
+```
+
+
+## Save plot
+* Save the ggplot using function ggsave() as 'png'
+   - use argument 'path' in order to save plot in folder 'R/Routput'
+      + Hint: the Rmd file is in folder 'Rmarkdown', i.e. you have to go one level up and then to 'Routput': ../Routput
+
+
+```{r, eval = TRUE, echo = TRUE}
+
+
+```
+
+* Try to change/include following arguments in the function and look at the output in folder 'Routput'
+   - units
+   - scale
+   
+  
+
+
+
