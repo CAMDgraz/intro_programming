@@ -1,0 +1,140 @@
+---
+title: "Day2 - Exercise 2"
+subtitle: "Example Glucose"
+author: "YOUR NAME"
+date: "2023-11-10"
+output: 
+   html_document:
+     toc: TRUE
+     toc_float: TRUE
+---
+
+```{r setup, include = FALSE}
+# settings for output
+  knitr::opts_chunk$set(echo = TRUE)
+
+# libraries used in this Rmd
+  library(ggplot2)
+  library(tidyverse)
+  library(flextable)
+  library(gtsummary)
+```
+
+```{r}
+# Load Rdata file
+
+ load(file = paste0("../Rdata/", "messy_glucose_prepared_v20231109.Rdata"))
+
+# show general information about dataset
+
+ info$general %>% 
+   flextable::flextable()
+
+```
+
+
+
+# Data set - Glucose
+
+
+Glucose tolerance was tested by administering 100g glucose drink
+
+* Glucose was tested before and 1 hour after administering
+
+The data set contains following parameters
+
+* pat_id 
+* ...
+
+for `r nrow(dt_glucose)`` patients.
+
+```{r}
+# TO DO: Show first few lines
+ 
+ dt_glucose %>% 
+  filter(row_number() <6) %>% 
+  flextable::flextable()
+
+```
+
+# Tables
+## Descriptive statistics
+* Generate a table with descriptive statistics for the parameters: race, sex, glucose_diff, and age
+   - look at homepage of gtsummary: https://www.danieldsjoberg.com/gtsummary/
+   - tbl_summary()
+
+```{r}
+
+ dt_glucose %>%
+  tbl_summary(include = c(Race, Sex, glucose_diff, age))
+
+```
+
+
+* Can you generate this table also separated by sex, i.e., descriptive statistics for the parameters race, glucose_diff, and age with one column for man and another for women?
+   - Hint: argument 'by'
+   
+
+```{r, eval = TRUE, echo = TRUE}
+dt_glucose %>%
+  tbl_summary(include = c(Race, glucose_diff, age),
+              by = Sex)
+
+```
+
+* Search online for information how to change the statistics from median (IQR) to mean with standard deviation
+
+
+## Summary tables
+* Sometimes it is interesting to get summary information from your data, e.g., for each category of race you want to know
+   - how many man/women
+   - what is the minimum age and maximum age observed
+   
+```{r, eval = TRUE, echo = TRUE}
+# extend the code underneath
+# use round() to have only 1 decimal place for the columns with age
+# use flextable() to get a nicer output
+
+dt_glucose %>%
+  group_by(Race) %>% 
+  summarize(n_total = n(),
+            n_male = sum(Sex == "Male"),
+            n_female = sum(Sex == "Female"),
+            age_min = round(min(age),1 ),
+            age_max = round(max(age),1)) %>% 
+  flextable::flextable()
+
+```
+ 
+### group_by() and mutate()
+* Sometimes we need to calculate/create parameters differently for patients, e.g. we want to state if glucose_diff for a patient is above/below average, however, we need to first calculate the mean glucose_diff separately by sex.
+   - Hint: look at the examples in documentation of group_by()
+   - select the parameters pat_id, Sex, and glucose_diff
+   - show data set only for first 6 patients
+   - after group_by() it is (often) necessary to 'ungroup' data again
+
+```{r}
+dt_glucose %>% 
+  select(pat_id, Sex, glucose_diff) %>% 
+  group_by(Sex) %>% 
+  mutate(mean_glucose_diff = mean(glucose_diff)) %>% 
+  ungroup %>% 
+  filter(row_number() <= 6) %>% 
+  flextable::flextable()
+ 
+```
+  
+  
+
+# Plots
+**TO DO**
+* generate plots which help to look at the data, e.g.,
+   - bar charts
+   - scatter plot
+   - histogram
+   - box plot
+   - answering questions like: similar age distribution in man and woman?
+* save one plot as a file in folder R/Routput using ggsave()   
+   
+
+
